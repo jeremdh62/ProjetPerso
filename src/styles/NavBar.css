@@ -1,0 +1,20 @@
+.root {
+    display: 'flex'
+}
+
+.drawer {
+    width: 240;
+    flex-shrink: 0;
+}
+
+.drawerPaper {
+    width: 240;
+}
+
+.hide {
+    display: none
+}
+
+.menuButton {
+    margin-right: 2
+}
