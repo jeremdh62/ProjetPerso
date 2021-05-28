@@ -1,0 +1,38 @@
+.root{
+    margin-top: 75px;
+}
+
+.card{
+    margin: 15px;
+}
+
+.media{
+    height: 0;
+    padding-top: 56.25%;
+    background-color: grey;
+}
+
+.rare{
+    background-color: #1299C9;
+}
+
+.uncommon{
+    background-color: #47B024;
+}
+
+.epic{
+    background-color: #C801F4;
+}
+
+.dc{
+    background-color: #01A2AA;
+}
+
+.icon{
+    background-color: #288687;
+}
+
+.common{
+    background-color: grey;
+}
+

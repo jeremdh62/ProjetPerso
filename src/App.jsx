@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import Home from './components/Home';
 import {BrowserRouter as Router,Route, Switch} from 'react-router-dom';
 import Items from './components/Items';
+import Stats from './components/Stats';
 
 function App() {
 
@@ -14,9 +15,9 @@ function App() {
       <Router>
         <NavBar open={open} setOpen={setOpen}/>
 
-        <Switch>
+        <Switch>     
+          <Route path="/cosmetique" component={Items}></Route>
           <Route path="/" render={() => <Home to="/" open={open}></Home>}></Route>
-          <Route path="/items" component={Items}></Route>
         </Switch>
       </Router>      
     </div>

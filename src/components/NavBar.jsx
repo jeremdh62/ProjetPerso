@@ -14,11 +14,13 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
 import HomeIcon from '@material-ui/icons/Home';
+import PaletteIcon from '@material-ui/icons/Palette';
 
 import {useStyles} from '../styles/NavBarCSS';
 
@@ -53,9 +55,14 @@ export default function NavBar({open, setOpen}) {
         </div>
         <Divider />
         <List>
-            <ListItem button>
+            <ListItem button component="a" href="/">
               <ListItemIcon><HomeIcon color="primary" /></ListItemIcon>
-              <ListItemText primary="Accueil" />
+              <ListItemText primary="Accueil"/>
+            </ListItem>
+
+            <ListItem button component="a" href="/Cosmetique">
+              <ListItemIcon><PaletteIcon color="primary" /></ListItemIcon>
+              <ListItemText primary="Cosmétique" />
             </ListItem>
         </List>
       </Drawer>
